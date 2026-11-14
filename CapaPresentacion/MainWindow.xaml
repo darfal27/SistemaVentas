@@ -1,0 +1,35 @@
+﻿<Window x:Class="CapaPresentacion.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CapaPresentacion"
+        mc:Ignorable="d"
+        Title="Sistema de Ventas" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_Archivo">
+                <MenuItem x:Name="txtSalir" Header="_Salir" Click="txtSalir_Click"/>
+            </MenuItem>
+            <MenuItem Header="_Mantenimiento">
+                <MenuItem x:Name="txtProductos" Header="_Productos" Click="txtProductos_Click"/>
+            </MenuItem>
+            <MenuItem Header="A_yuda">
+                <MenuItem x:Name="txtAcercaDe" Header="_Acerca de" Click="txtAcercaDe_Click"/>
+            </MenuItem>
+        </Menu>
+        <StatusBar DockPanel.Dock="Bottom">
+            <TextBlock x:Name="txtEstado" Text="Listo" />
+        </StatusBar>
+        <Grid >
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock Text="Sistema de Ventas" FontSize="32" FontWeight="Bold" Foreground="#FF1F4E79" HorizontalAlignment="Center" />
+                <TextBlock Text="Elige una opción del menú Mantenimiento" FontSize="14" HorizontalAlignment="Center" Margin="0,8,0,0" >
+                    <TextBlock.Foreground>
+                        <SolidColorBrush Color="Gray"/>
+                    </TextBlock.Foreground>
+                </TextBlock>
+            </StackPanel>
+        </Grid>
+    </DockPanel>
+</Window>
