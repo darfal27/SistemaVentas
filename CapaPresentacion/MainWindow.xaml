@@ -23,7 +23,7 @@
         </StatusBar>
         <Grid >
             <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-                <TextBlock Text="Sistema de Ventas - SNT" FontSize="32" FontWeight="Bold" Foreground="#FF1F4E79" HorizontalAlignment="Center" />
+                <TextBlock Text="Sistema de Ventas - SENATI" FontSize="32" FontWeight="Bold" Foreground="#FF1F4E79" HorizontalAlignment="Center" />
                 <TextBlock Text="Elige una opción del menú Mantenimiento" FontSize="14" HorizontalAlignment="Center" Margin="0,8,0,0" >
                     <TextBlock.Foreground>
                         <SolidColorBrush Color="Gray"/>
